@@ -28,7 +28,7 @@ function onDeviceReady() {
     log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
     // get Directory Entry
-    window.resolveLocalFileSystemURL(cordova.file.tempDirectory, directoryEntry => {
+    window.resolveLocalFileSystemURL(cordova.file.dataDirectory, directoryEntry => {
         log('directoryEntry', directoryEntry);
 
         // make a file called test.txt
